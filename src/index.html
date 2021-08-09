@@ -4,9 +4,97 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Parallax Website</title>
+    <!-- Favicon -->
+    <link rel="icon" href="./img/half-moon.png">
+    <!-- custome css -->
     <link rel="stylesheet" href="./css/style.css">
+    <!-- Boostrap  -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+
 </head>
 <body>
+    <header>
+        <a href="#" class="logo">logo</a>
+        <ul>
+            <li><a href="#" class="active">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Service</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </header>
+    <section>
+        <img src="./img/stars.png" id="stars" alt="star">
+        <img src="./img/moon.png" id="moon" alt="moon">
+        <h2 id="text">Crazy Studio BD</h2>
+        <a href="#text-area" class="btn" id="btn">Explore</a>
+        <img src="./img/mountains_behind.png" id="mount" alt="mountains">
+        <img src="./img/mountains_front.png" id="fmount" alt="mountains">
+    </section>
+
+    <div class="text-area" id="text-area">
+        <h1>Services</h1>
+        <img src="./img/bgf.png" id="bg-img" alt="">
+         <div class="container">
+             <div class="row">
+                 <div class="col-md-4">
+                     <div class="content">
+                        <div class="card">
+                            <img src="./img/camera.png" alt="camera">
+                            <h2>CS_BD</h2>
+                            <h3>Photography</h3>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque voluptates ad quod nulla enim consequuntur explicabo odit, fugiat cumque facilis velit perspiciatis ducimus earum mollitia architecto iste.</p>
+                            <a href="#">Read More</a>
+                        </div>
+                     </div>
+                 </div>
+                 <div class="col-md-4">
+                    <div class="content">
+                       <div class="card">
+                        <img src="./img/poster.png" alt="camera">
+                        <h2>CS_BD</h2>
+                        <h3>Poster Designs</h3>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque voluptates ad quod nulla enim consequuntur explicabo odit, fugiat cumque facilis velit perspiciatis ducimus earum mollitia architecto iste.</p>
+                           <a href="#">Read More</a>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="content">
+                       <div class="card">
+                        <img src="./img/responsive.png" alt="camera">
+                        <h2>CS_BD</h2>
+                        <h3>Web Department</h3>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque voluptates ad quod nulla enim consequuntur explicabo odit, fugiat cumque facilis velit perspiciatis ducimus earum mollitia architecto iste.</p>
+                           <a href="#">Read More</a>
+                       </div>
+                    </div>
+                </div>
+             </div>
+         </div>
+    </div>
+
+    <script>
+        let stars = document.getElementById('stars');
+        let moon = document.getElementById('moon');
+        let mount = document.getElementById('mount');
+        let fmount = document.getElementById('fmount');
+        let text = document.getElementById('text');
+        let btn = document.getElementById('btn');
+        let header = document.querySelector('header');
+
+
+        window.addEventListener('scroll', function(){
+            let value = window.scrollY;
+            stars.style.left = value * 0.25 + 'px';
+            moon.style.top = value * 1.05 + 'px';
+            mount.style.top = value * 0.5 + 'px';
+            fmount.style.top = value * 0 + 'px';
+            text.style.marginRight = value * 4 + 'px';
+            text.style.marginTop = value * 1.5 + 'px';
+            btn.style.marginTop = value * 1.5 + 'px';
+            header.style.Top = value * 0.5 + 'px';
+        })
+    </script>
 </body>
 </html>
