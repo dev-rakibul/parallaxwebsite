@@ -28,6 +28,8 @@ header {
     font-size: 2em;
     text-transform: uppercase;
     letter-spacing: 2px; }
+    header .logo:hover {
+      color: #fab6cc; }
   header ul {
     display: flex;
     justify-content: center;
@@ -106,12 +108,16 @@ section {
     width: 100%;
     height: 100%;
     background: linear-gradient(#1c0522, #fab6cc);
-    clip-path: circle(20% at 10% 10%); }
+    clip-path: circle(25% at 10% 10%); }
   .text-area h1 {
     font-size: 3.5em;
     margin-bottom: 10px;
+    padding-top: 50px;
     color: #fff;
     text-align: center; }
+    .text-area h1:hover {
+      color: #fab6cc;
+      cursor: pointer; }
   .text-area #bg-img {
     position: absolute;
     top: 55%;
@@ -125,6 +131,7 @@ section {
     justify-content: center;
     align-items: center;
     max-width: 1600px;
+    cursor: pointer;
     flex-wrap: wrap;
     z-index: 1; }
     .text-area .container .card {
@@ -145,19 +152,12 @@ section {
       .text-area .container .card img {
         width: 100px;
         height: auto;
-        margin-top: 10px;
+        margin: 10px;
         z-index: 1; }
     .text-area .container .content {
       padding: 20px;
       text-align: center;
       transition: 0.5s; }
-      .text-area .container .content h2 {
-        position: absolute;
-        top: -5px;
-        right: 28px;
-        font-size: 3em;
-        color: rgba(255, 255, 255, 0.335);
-        pointer-events: none; }
       .text-area .container .content h3 {
         font-size: 1.8em;
         color: #fff;
@@ -165,7 +165,8 @@ section {
       .text-area .container .content p {
         font-size: 1em;
         color: #ffff;
-        font-weight: 200; }
+        font-weight: 200;
+        padding: 0 8px; }
       .text-area .container .content a {
         position: relative;
         display: inline-block;
@@ -178,3 +179,7 @@ section {
         font-weight: 500;
         color: #2b1055;
         box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5); }
+
+.work-area {
+  background: #1c0522;
+  padding: 100px; }

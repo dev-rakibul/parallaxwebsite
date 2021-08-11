@@ -15,7 +15,7 @@
 </head>
 <body>
     <header>
-        <a href="#" class="logo">logo</a>
+        <a href="#" class="logo">csbd</a>
         <ul>
             <li><a href="#" class="active">Home</a></li>
             <li><a href="#">About</a></li>
@@ -41,9 +41,9 @@
                      <div class="content">
                         <div class="card">
                             <img src="./img/camera.png" alt="camera">
-                            <h2>CS_BD</h2>
+
                             <h3>Photography</h3>
-                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque voluptates ad quod nulla enim consequuntur explicabo odit, fugiat cumque facilis velit perspiciatis ducimus earum mollitia architecto iste.</p>
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque </p>
                             <a href="#">Read More</a>
                         </div>
                      </div>
@@ -52,9 +52,8 @@
                     <div class="content">
                        <div class="card">
                         <img src="./img/poster.png" alt="camera">
-                        <h2>CS_BD</h2>
                         <h3>Poster Designs</h3>
-                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque voluptates ad quod nulla enim consequuntur explicabo odit, fugiat cumque facilis velit perspiciatis ducimus earum mollitia architecto iste.</p>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque </p>
                            <a href="#">Read More</a>
                        </div>
                     </div>
@@ -63,9 +62,8 @@
                     <div class="content">
                        <div class="card">
                         <img src="./img/responsive.png" alt="camera">
-                        <h2>CS_BD</h2>
                         <h3>Web Department</h3>
-                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque voluptates ad quod nulla enim consequuntur explicabo odit, fugiat cumque facilis velit perspiciatis ducimus earum mollitia architecto iste.</p>
+                           <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Optio esse alias itaque </p>
                            <a href="#">Read More</a>
                        </div>
                     </div>
@@ -73,7 +71,29 @@
              </div>
          </div>
     </div>
-
+    <!-- work-section -->
+    <div class="work-area">
+        <h2>Our Works</h2>
+        <div class="container">
+            <div class="row">
+                
+            </div>
+        </div>
+    </div>
+    <!-- tilt-js -->
+    <script type="text/javascript" src="./js/vanilla-tilt.js"></script>
+    <script>
+        
+	VanillaTilt.init(document.querySelectorAll(".card"),{
+		max: 25,
+		speed: 600,
+        glare: true,
+        "max-glare":1
+	});
+	
+	//It also supports NodeList
+	VanillaTilt.init(document.querySelectorAll(".your-element"));
+    </script>
     <script>
         let stars = document.getElementById('stars');
         let moon = document.getElementById('moon');
