@@ -220,7 +220,30 @@ section{
         }
     }
 }
+
 .work-area{
     background:#1c0522;
     padding: 100px;
+    h2{
+        text-align: center;
+        color: #fff;
+        font-size: 3.8em;
+        font-weight: 500;
+    }
+    h4{
+        text-align: center;
+        color: #fff;
+        font-weight: 400;
+        padding-bottom: 50px;
+    }
+    img{
+        margin: 20px 0;
+        width: 100%;
+        height: auto;
+        transition: 0.5s;
+        cursor: pointer;
+        &:hover{
+            transform: translateY(-30px);
+        }
+    }
 }
