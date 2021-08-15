@@ -237,6 +237,7 @@ section{
         padding-bottom: 50px;
     }
     img{
+        padding: 20px;
         margin: 20px 0;
         width: 100%;
         height: auto;
@@ -245,5 +246,108 @@ section{
         &:hover{
             transform: translateY(-30px);
         }
+    }
+}
+
+// contact-area
+.contact-area{
+    background: #1c0522;
+    padding: 100px;
+    cursor: pointer;
+        .section-title{
+            text-align: center;
+            padding: 40px;
+            h2{
+                color: #fff;
+                padding-bottom: 15px;
+            }
+            p{
+                color: #fff;
+            }
+        }
+    input{
+        background: transparent;
+        outline: none;
+        overflow: hidden;
+    }
+    textarea{
+        background: transparent;
+        outline: none;
+        overflow: hidden;
+    }
+    .form-footer{
+        margin-top: 20px;
+        input{
+            color: #fff;
+            border: 1px solid #fff;
+            padding: 10px 15px;
+            border-radius: 5px;
+            &:hover{
+                background: #2b1055;
+            }
+        }
+    }
+}
+.footer-area{
+    background: #1c0522;
+    padding: 80px 0;
+    h5{
+        color: #fff;
+        padding: 15px 0;
+    }
+    h6{
+        font-weight: bold;
+    }
+    h4{
+        color: #fff;
+    }
+    span{
+        color: #fff;
+        cursor: pointer;
+        font-size: 30px;
+        .fab{
+            color: #fff;
+        }
+        a{
+            text-decoration: none;
+            padding: 15px 20px;
+        }
+    }
+}
+.top-arrow{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    background: #7597de;
+    padding: 0px 15px;
+    text-align: center;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: 0.5s;
+    z-index: 1;
+    &:hover{
+        background: #2b1055;
+        cursor: pointer;
+        }
+    i{
+    color: #fff;
+    font-size: 25px;
+    padding-top: 4px;
+    }
+    p{
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding-bottom: 0px;
+    }
+
+}
+.copy-right{
+    text-align: center;
+    background: #1c0522;
+    padding: 10px 0;
+    span{
+        color: #fff;
     }
 }

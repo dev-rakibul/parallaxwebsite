@@ -194,6 +194,7 @@ section {
     font-weight: 400;
     padding-bottom: 50px; }
   .work-area img {
+    padding: 20px;
     margin: 20px 0;
     width: 100%;
     height: auto;
@@ -201,3 +202,85 @@ section {
     cursor: pointer; }
     .work-area img:hover {
       transform: translateY(-30px); }
+
+.contact-area {
+  background: #1c0522;
+  padding: 100px;
+  cursor: pointer; }
+  .contact-area .section-title {
+    text-align: center;
+    padding: 40px; }
+    .contact-area .section-title h2 {
+      color: #fff;
+      padding-bottom: 15px; }
+    .contact-area .section-title p {
+      color: #fff; }
+  .contact-area input {
+    background: transparent;
+    outline: none;
+    overflow: hidden; }
+  .contact-area textarea {
+    background: transparent;
+    outline: none;
+    overflow: hidden; }
+  .contact-area .form-footer {
+    margin-top: 20px; }
+    .contact-area .form-footer input {
+      color: #fff;
+      border: 1px solid #fff;
+      padding: 10px 15px;
+      border-radius: 5px; }
+      .contact-area .form-footer input:hover {
+        background: #2b1055; }
+
+.footer-area {
+  background: #1c0522;
+  padding: 80px 0; }
+  .footer-area h5 {
+    color: #fff;
+    padding: 15px 0; }
+  .footer-area h6 {
+    font-weight: bold; }
+  .footer-area h4 {
+    color: #fff; }
+  .footer-area span {
+    color: #fff;
+    cursor: pointer;
+    font-size: 30px; }
+    .footer-area span .fab {
+      color: #fff; }
+    .footer-area span a {
+      text-decoration: none;
+      padding: 15px 20px; }
+
+.top-arrow {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  display: none;
+  background: #7597de;
+  padding: 0px 15px;
+  text-align: center;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: 0.5s;
+  z-index: 1; }
+  .top-arrow:hover {
+    background: #2b1055;
+    cursor: pointer; }
+  .top-arrow i {
+    color: #fff;
+    font-size: 25px;
+    padding-top: 4px; }
+  .top-arrow p {
+    text-transform: uppercase;
+    color: #fff;
+    font-size: 10px;
+    padding-bottom: 0px; }
+
+.copy-right {
+  text-align: center;
+  background: #1c0522;
+  padding: 10px 0; }
+  .copy-right span {
+    color: #fff; }
