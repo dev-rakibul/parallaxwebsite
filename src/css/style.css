@@ -30,6 +30,9 @@ header {
     letter-spacing: 2px; }
     header .logo:hover {
       color: #fab6cc; }
+    header .logo img {
+      width: 100px;
+      height: auto; }
   header ul {
     display: flex;
     justify-content: center;
